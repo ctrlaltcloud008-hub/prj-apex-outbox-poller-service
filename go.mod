@@ -1,10 +1,11 @@
-module github.com/ctrlaltcloud008-hub/prj-apex-outbox-poller-service
+module github.com/ctrlaltcloud008-hub/prj-apex-outbox-relay-service
 
 go 1.26.3
 
 require (
 	cloud.google.com/go/pubsub/v2 v2.0.0
-	github.com/ctrlaltcloud008-hub/prj-apex-core-modules v1.1.4
+	cloud.google.com/go/spanner v1.91.0
+	github.com/ctrlaltcloud008-hub/prj-apex-core-modules v1.1.6
 	github.com/spf13/viper v1.21.0
 	google.golang.org/api v0.280.0
 )
@@ -17,7 +18,6 @@ require (
 	cloud.google.com/go/compute/metadata v0.9.0 // indirect
 	cloud.google.com/go/iam v1.7.0 // indirect
 	cloud.google.com/go/monitoring v1.25.0 // indirect
-	cloud.google.com/go/spanner v1.91.0 // indirect
 	github.com/GoogleCloudPlatform/grpc-gcp-go/grpcgcp v1.6.0 // indirect
 	github.com/GoogleCloudPlatform/opentelemetry-operations-go/detectors/gcp v1.32.0 // indirect
 	github.com/cenkalti/backoff/v5 v5.0.3 // indirect
